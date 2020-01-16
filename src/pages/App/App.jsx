@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
+import Scooter from "../../components/Scooter/Scooter"
 
 class App extends Component {
   constructor() {
@@ -12,8 +13,11 @@ class App extends Component {
     return (
       <div>
         <header>Header</header>
+        <Scooter/>
         <Switch>
-          <Route exact path='/' render={() => <HomePage /> } />
+          <Route exact path='/' render={() => 
+            <HomePage />
+          } />
         </Switch>
       </div>
     );
